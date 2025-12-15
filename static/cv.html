@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - DevOps Engineer</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .cv-container {
+            max-width: 800px;
+            margin: 120px auto 60px;
+            padding: 40px;
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .cv-header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 20px;
+        }
+        .cv-section {
+            margin-bottom: 30px;
+        }
+        .cv-section h2 {
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        .job {
+            margin-bottom: 20px;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        .company { font-weight: bold; font-size: 1.1rem; }
+        .date { color: var(--text-secondary); font-size: 0.9rem; }
+        .role { color: var(--text-secondary); font-style: italic; margin-bottom: 10px; }
+        ul { padding-left: 20px; color: var(--text-secondary); }
+        li { margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">DevOps<span class="highlight">Engineer</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="cv.html" class="highlight">CV</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cv-container">
+            <div class="cv-header">
+                <h1>Curriculum Vitae</h1>
+                <p>Senior DevOps Engineer</p>
+            </div>
+
+            <div class="cv-section">
+                <h2>Experience</h2>
+                <div class="job">
+                    <div class="job-header">
+                        <span class="company">Tech Solutions Inc.</span>
+                        <span class="date">2022 - Present</span>
+                    </div>
+                    <div class="role">Senior DevOps Engineer</div>
+                    <ul>
+                        <li>Led migration of monolithic application to microservices on AWS EKS.</li>
+                        <li>Implemented GitOps workflow using ArgoCD, reducing deployment time by 60%.</li>
+                        <li>Designed and maintained multi-region Terraform infrastructure.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <div class="job-header">
+                        <span class="company">Cloud Systems Ltd.</span>
+                        <span class="date">2019 - 2022</span>
+                    </div>
+                    <div class="role">DevOps Engineer</div>
+                    <ul>
+                        <li>Managed Azure DevOps pipelines for 20+ development teams.</li>
+                        <li>Automated infrastructure provisioning using Ansible and Bicep.</li>
+                        <li>Implemented centralized logging and monitoring with ELK stack.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cv-section">
+                <h2>Skills</h2>
+                <ul>
+                    <li><strong>Cloud:</strong> AWS, GCP, Azure</li>
+                    <li><strong>Containerization:</strong> Docker, Kubernetes, Helm</li>
+                    <li><strong>IaC:</strong> Terraform, Ansible, CloudFormation, Bicep</li>
+                    <li><strong>CI/CD:</strong> Jenkins, GitHub Actions, GitLab CI, Azure DevOps</li>
+                    <li><strong>Monitoring:</strong> Prometheus, Grafana, Datadog, ELK</li>
+                </ul>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="index.html" class="btn btn-primary">Back to Portfolio</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

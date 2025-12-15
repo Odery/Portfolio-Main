@@ -2,9 +2,119 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hello</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Engineer Portfolio</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">DevOps<span class="highlight">Engineer</span></div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Automating the Future</h1>
+                <p class="subtitle">Cloud Infrastructure & CI/CD Specialist</p>
+                <p class="bio">
+                    Hello! I'm a passionate DevOps Engineer. I build robust, scalable, and secure infrastructure on AWS, GCP, and Azure.
+                    My focus is on automation, containerization, and efficient delivery pipelines.
+                </p>
+                <div class="cta-buttons">
+                    <a href="cv.html" class="btn btn-primary">View Full CV</a>
+                    <a href="#projects" class="btn btn-outline">See Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>Showcasing multi-cloud expertise</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- AWS Project -->
+                <div class="project-card">
+                    <div class="card-header aws-header">
+                        <i class="fab fa-aws"></i>
+                        <h3>AWS Architecture</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Serverless microservices architecture using Lambda, API Gateway, and DynamoDB. Fully automated deployment with Terraform and GitHub Actions.</p>
+                        <div class="tech-stack">
+                            <span class="tag">Terraform</span>
+                            <span class="tag">Lambda</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                        <a href="#" class="btn-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- GCP Project -->
+                <div class="project-card">
+                    <div class="card-header gcp-header">
+                        <i class="fab fa-google"></i>
+                        <h3>GCP Kubernetes</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>High-availability GKE cluster setup with Istio service mesh. GitOps workflow implemented using ArgoCD for continuous delivery.</p>
+                        <div class="tech-stack">
+                            <span class="tag">K8s</span>
+                            <span class="tag">Helm</span>
+                            <span class="tag">ArgoCD</span>
+                        </div>
+                        <a href="#" class="btn-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Azure Project -->
+                <div class="project-card">
+                    <div class="card-header azure-header">
+                        <i class="fab fa-microsoft"></i>
+                        <h3>Azure DevOps</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Enterprise-grade CI/CD pipelines using Azure DevOps. Infrastructure as Code managed via Bicep with strict security compliance policies.</p>
+                        <div class="tech-stack">
+                            <span class="tag">Azure DevOps</span>
+                            <span class="tag">Bicep</span>
+                            <span class="tag">Ansible</span>
+                        </div>
+                        <a href="#" class="btn-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Let's Connect</h3>
+                <p>Open for opportunities and collaborations.</p>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 DevOps Engineer Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
