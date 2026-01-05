@@ -8,6 +8,18 @@ import (
 	"syscall"
 )
 
+// Metadata about the current build.
+// To be injected by the build process.
+// TODO: use in logs
+var (
+
+	// GitCommitSHA current Git commit SHA of the build, "dev" by default.
+	GitCommitSHA = "dev"
+
+	// GitBranch current Git branch of the build, "dev" by default.
+	GitBranch = "dev"
+)
+
 func main() {
 	srv := internal.NewServer("8080", "Portfolio")
 
