@@ -38,4 +38,4 @@ runs:
       run: |
         echo "--- 2. Ship Binary ---"
         # It is a forced command on the SSH, so we just pipe data to the script on the remote server.
-        gzip -c "$ARTIFACT" | ssh -i ~/.ssh/deploy_key "$SSH_USER"@"$SSH_HOST"
+        gzip -c "$ARTIFACT" | ssh -T -i ~/.ssh/deploy_key "$SSH_USER"@"$SSH_HOST"
