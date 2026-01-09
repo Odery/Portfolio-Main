@@ -1,19 +1,29 @@
 package internal
 
-import "github.com/gofiber/fiber/v2"
+import (
+	"embed"
+	"net/http"
+
+	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/filesystem"
+)
 
 type Server struct {
 	App  *fiber.App
 	Port string
 }
 
-func NewServer(port, name string) *Server {
+func NewServer(port, name string, staticFS embed.FS) *Server {
 	app := fiber.New(fiber.Config{
 		AppName: name,
 	})
 
 	//Server static files
-	app.Static("/", "./static")
+	app.Use("/", filesystem.New(filesystem.Config{
+		Root:       http.FS(staticFS),
+		PathPrefix: "static",
+		Browse:     false,
+	}))
 
 	//Handle routes
 	app.Get("/", IndexPage)

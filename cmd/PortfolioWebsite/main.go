@@ -1,6 +1,7 @@
 package main
 
 import (
+	"Portfolio"
 	"Portfolio/internal"
 	"log"
 	"os"
@@ -21,7 +22,7 @@ var (
 )
 
 func main() {
-	srv := internal.NewServer("8080", "Portfolio")
+	srv := internal.NewServer("8080", "Portfolio", Portfolio_Main.FS)
 
 	//Handle sig term
 	sig := make(chan os.Signal, 1)
