@@ -60,7 +60,7 @@ jobs:
           args: ' -no-fail -fmt sarif -out sarif-reports/go-results.sarif ./...'
 
       - name: Upload SARIF Reports
-        uses: github/codeql-action/upload-sarif@a2d9de63c2916881d0621fdb7e65abe32141606d
+        uses: github/codeql-action/upload-sarif@f985be5b50bd175586d44aac9ac52926adf12893
         with:
           sarif_file: sarif-reports
 
