@@ -86,7 +86,7 @@ jobs:
           echo "Coverage: $cov"
 
       - name: Upload Coverage Report
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: coverage-report
           path: coverage.txt
@@ -125,7 +125,7 @@ jobs:
           -o portfolio-app ./cmd/PortfolioWebsite
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: 'app-binary'
           path: portfolio-app
